@@ -1,0 +1,17 @@
+main {
+    .pad-t-team-container {
+        padding-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .pad-t-team-container {
+        padding-top: 80px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pad-t-team-container {
+        padding-top: 60px !important;
+    }
+}

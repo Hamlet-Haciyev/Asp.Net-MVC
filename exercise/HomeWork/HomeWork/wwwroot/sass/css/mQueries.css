@@ -1,0 +1,80 @@
+.get-started-first {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.get-started-first h1 {
+  font-size: 30px;
+}
+
+.get-started-first p {
+  font-size: 14px !important;
+}
+
+.get-started-first a {
+  font-size: 13px !important;
+  margin-top: 10px !important;
+}
+
+@media only screen and (max-width: 991px) {
+  .responsive-nav-menu {
+    display: block !important;
+  }
+  .nav-full-row {
+    display: none !important;
+  }
+  .get-started-under-nav-col {
+    height: auto !important;
+    padding-top: 60px !important;
+  }
+  .get-started-first {
+    max-width: 620px !important;
+    padding-right: 0;
+    margin-right: auto !important;
+    text-align: center !important;
+    margin-top: 0 !important;
+  }
+  .get-started-first h1 {
+    font-size: 40px !important;
+  }
+  .get-started-first p {
+    font-size: 14px !important;
+  }
+  .get-started-first a {
+    font-size: 14px !important;
+    margin-top: 10px !important;
+  }
+  #get-started-under-nav .shape19 {
+    display: none !important;
+  }
+  #get-started-under-nav .shape20 {
+    display: none !important;
+  }
+  #get-started-under-nav .shape21 {
+    display: none !important;
+  }
+  #get-started-under-nav .shape23 {
+    display: none !important;
+  }
+  #get-started-under-nav .shape25 {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .nav-menu-col {
+    text-align: center !important;
+  }
+  .full-nav {
+    position: relative !important;
+  }
+  .nav-buttons {
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: start !important;
+  }
+  .nav-buttons a:last-child {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=mQueries.css.map */

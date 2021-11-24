@@ -1,0 +1,384 @@
+main {
+    #discovered {
+        padding: 100px 0;
+        .d-texts {
+            span {
+                display: block;
+                color: #ff612f;
+                margin-bottom: 7px;
+            }
+            h2 {
+                color: #080a3c;
+                margin-bottom: 10px;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            p {
+                color: #4a6f8a;
+                margin-bottom: 12px;
+                line-height: 1.8;
+                font-size: 15px;
+            }
+        }
+        .d-img {
+            img {
+                width: 100% !important;
+                border-radius: 0.25rem;
+            }
+        }
+    }
+    #featured-by {
+        padding: 70px 0;
+        background-color: #f8fbfa;
+        .f-title {
+            h3 {
+                color: #8791b0;
+                margin-bottom: 0;
+                font-size: 22px;
+                font-weight: 500;
+            }
+        }
+        .f-carusel {
+            .owl-stage-outer {
+                .owl-stage {
+                    display: flex;
+                    align-items: center;
+                    .owl-item {
+                        width: 172px !important;
+                        img {
+                            cursor: pointer;
+                            opacity: 0.6;
+                            width: 172px !important;
+                            transition: all 0.5s ease;
+                            &:hover {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .about-expetrs {
+        padding-top: 0 !important;
+    }
+    #mobile-app {
+        background-color: #f4f5fe;
+        background-image: url("../img/about-img/white-bg.jpeg");
+        background-position: center;
+        background-size: cover;
+        padding: 100px 0;
+        .mobile-app-img {
+            text-align: center;
+            img {
+                max-width: 100%;
+            }
+        }
+        .mobile-app-texts {
+            #apptitle {
+                display: inline-block;
+                background-color: #13c4a1;
+                color: #fff;
+                padding: 5px 25px;
+                border-radius: 35px;
+                margin-bottom: 15px;
+                font-size: 14px;
+                font-weight: 400;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 500;
+                color: #080a3c;
+            }
+            .appstores {
+                margin-top: 30px;
+                a {
+                    transition: all 0.5s ease;
+                    margin-right: 8px;
+                    display: inline-block;
+                    background-color: #fff;
+                    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+                    padding: 12px 25px 12px 74px;
+                    border-radius: 5px;
+                    position: relative;
+                    z-index: 1;
+                    color: #666786;
+                    font-size: 13px;
+                    font-weight: 400;
+                    text-decoration: none;
+                    i {
+                        position: absolute;
+                        left: 25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 43px;
+                        color: black;
+                    }
+                    span {
+                        display: block;
+                        color: #080a3c;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+                &:first-child {
+                    i {}
+                }
+                &:last-child {
+                    i {}
+                }
+            }
+        }
+    }
+    #about-clients-about-strax {
+        padding: 100px 0 70px;
+        background-color: white;
+        .acas-title {
+            margin-bottom: 60px;
+            display: flex;
+            justify-content: center;
+            h2 {
+                margin-bottom: 0;
+                font-size: 40px;
+                font-weight: 600;
+                text-align: center;
+                max-width: 575px;
+                color: #080a3c;
+                span {
+                    color: #ff612f;
+                }
+            }
+        }
+        .acas-carusel {
+            .owl-stage-outer {
+                .owl-stage {
+                    .owl-item {
+                        .acas-item {
+                            position: relative;
+                            margin-bottom: 40px;
+                            // margin-top: 95px;
+                            height: 365px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-end;
+                            img {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                z-index: 2;
+                                display: inline-block!important;
+                                width: auto!important;
+                            }
+                            .acas-text {
+                                padding: 30px 55px 30px 160px;
+                                position: relative;
+                                z-index: 1;
+                                overflow: hidden;
+                                margin-left: 45px;
+                                margin-right: 30px;
+                                background-color: #fff;
+                                box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
+                                p {
+                                    color: #4a6f8a;
+                                    line-height: 1.8;
+                                    font-size: 15px;
+                                    margin: 0;
+                                }
+                                .acas-rating {
+                                    margin-top: 13px;
+                                    margin-bottom: 15px;
+                                    color: #ff612f;
+                                    font-size: 17px;
+                                    i {}
+                                }
+                                .acas-info {
+                                    h3 {
+                                        margin-bottom: 0;
+                                        font-size: 18px;
+                                        font-weight: 500;
+                                        color: #080a3c;
+                                    }
+                                    span {
+                                        display: block;
+                                        color: #13c4a1;
+                                        font-size: 14px;
+                                        margin-top: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .owl-dots {
+                .owl-dot {
+                    border: 1px solid;
+                    border-radius: 50%;
+                    color: #13c4a1;
+                    margin: 5px;
+                    span {
+                        background: none;
+                        width: 8px;
+                        height: 8px;
+                        margin: 2px;
+                    }
+                }
+                .owl-dot.active {
+                    span {
+                        background: #ff612f;
+                    }
+                }
+            }
+            .owl-dots.disabled {
+                display: block;
+            }
+        }
+    }
+    .about-practice {
+        padding: 100px 0;
+    }
+    .about-video {
+        .v-counters {
+            .v-counter-item {
+                background-color: unset !important;
+                border: none !important;
+                padding: 0 !important;
+            }
+            #shape-map {
+                display: block !important;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .d-texts h2 {
+        font-size: 34px !important;
+    }
+    .acas-title h2 {
+        font-size: 34px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .d-texts h2 {
+        font-size: 30px !important;
+    }
+    #discovered {
+        padding: 80px 0 !important;
+    }
+    #featured-by {
+        padding: 50px 0 !important;
+    }
+    .f-title {
+        text-align: center !important;
+        margin-bottom: 45px !important;
+    }
+    .v-counters {
+        margin-top: 80px !important;
+    }
+    .questions {
+        margin-top: 30px !important;
+    }
+    .about-expetrs {
+        padding-top: 0 !important;
+        padding-bottom: 50px !important;
+    }
+    #mobile-app {
+        padding: 80px 0 !important;
+    }
+    .mobile-app-texts {
+        text-align: center !important;
+        max-width: 615px !important;
+        margin-top: 30px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .mobile-app-texts h2 {
+        font-size: 30px !important;
+    }
+    .about-practice {
+        padding-top: 80px !important;
+        padding-bottom: 80px !important;
+    }
+    .acas-title h2 {
+        font-size: 30px !important;
+    }
+    #about-clients-about-strax {
+        padding: 80px 0 50px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .d-texts h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    #discovered {
+        padding: 60px 0 !important;
+    }
+    #featured-by {
+        padding: 30px 0 !important;
+    }
+    .f-title {
+        text-align: center !important;
+        margin-bottom: 30px !important;
+    }
+    .v-counters {
+        margin-top: 40px !important;
+    }
+    .questions {
+        margin-top: 10px !important;
+    }
+    .about-expetrs {
+        padding-top: 0 !important;
+        padding-bottom: 30px !important;
+    }
+    #mobile-app {
+        padding: 60px 0 !important;
+    }
+    .mobile-app-texts h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    .mobile-app-texts {
+        text-align: center !important;
+        max-width: 615px !important;
+        margin-top: 30px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+    .about-practice {
+        padding-top: 60px !important;
+        padding-bottom: 60px !important;
+    }
+    .acas-title {
+        max-width: 100% !important;
+        margin-bottom: 40px !important;
+    }
+    .acas-title h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    #about-clients-about-strax {
+        padding: 60px 0 30px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .d-texts p {
+        font-size: 14px !important;
+    }
+    .d-texts {
+        text-align: center !important;
+    }
+    .d-img {
+        margin-top: 30px !important
+    }
+    .acas-title {
+        margin-bottom: 45px !important;
+    }
+}

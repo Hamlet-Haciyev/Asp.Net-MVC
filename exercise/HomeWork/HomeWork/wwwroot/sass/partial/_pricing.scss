@@ -1,0 +1,238 @@
+header {
+    .pricing-full-nav {
+        position: relative;
+        .nav-buttons-col {
+            .nav-buttons {
+                a {
+                    &:last-child {
+                        background-color: white;
+                        color: #080a3c;
+                        border: 1px solid #080a3c;
+                        &:hover {
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    #pricing-banner {
+        position: relative;
+        background-color: #ff612f;
+        padding: 130px 0 120px;
+        z-index: 1;
+        &::after {
+            content: "";
+            background-image: url("../img/pricing-img/bg_lines.svg");
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+            opacity: 0.6;
+            animation: pricingBannerAnimation 15s linear infinite;
+            @keyframes pricingBannerAnimation {
+                0% {
+                    background-position: 0;
+                }
+                50% {
+                    background-position: 300px;
+                }
+                100% {
+                    background-position: 0;
+                }
+            }
+        }
+        .banner-title {
+            text-align: center;
+            h2 {
+                color: #fff;
+                margin-bottom: 0;
+                font-size: 40px;
+                font-weight: 600;
+            }
+            p {
+                color: #fff;
+                margin-top: 15px;
+                margin-bottom: 0;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+main {
+    .pricing-accardion {
+        background-color: white !important;
+        .accordion-item {
+            .accordion-button {
+                background-color: #f5f5ff !important;
+            }
+            .accordion-button:not(.collapsed) {
+                background-color: #f5f5ff !important;
+            }
+            .accordion-collapse {
+                .accordion-body {
+                    background-color: #f5f5ff !important;
+                }
+            }
+        }
+    }
+    #practice {
+        background-color: #f4f5fe;
+        padding-bottom: 100px;
+        position: relative;
+        z-index: 1;
+        .full-practice {
+            text-align: center;
+            max-width: 695px;
+            margin-left: auto;
+            margin-right: auto;
+            h2 {
+                color: #080a3c;
+                font-size: 40px;
+                font-weight: 500;
+            }
+            p {
+                margin-top: 20px;
+                color: #4a6f8a;
+                margin-bottom: 12px;
+                line-height: 1.8;
+                font-size: 15px;
+            }
+            a {
+                margin-top: 20px;
+                text-decoration: none;
+                background-color: #ff612f;
+                @extend %buttons;
+                color: white;
+                i {
+                    color: #080a3c;
+                    @extend %buttons-icon;
+                }
+                &:hover {
+                    background-color: #13c4a1 !important;
+                }
+            }
+        }
+        .shape-10 {
+            position: absolute;
+            right: 30%;
+            bottom: 25%;
+            z-index: -1;
+            img {
+                animation: pricing-shape-11-animation 20s linear infinite;
+            }
+        }
+        .shape-11 {
+            position: absolute;
+            left: 10%;
+            bottom: 50%;
+            z-index: -1;
+            img {
+                animation: pricing-shape-11-animation 20s linear infinite;
+                @keyframes pricing-shape-11-animation {
+                    0% {
+                        transform: rotate(0);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+        .shape-12 {
+            position: absolute;
+            right: 18%;
+            bottom: 60%;
+            z-index: -1;
+            img {
+                animation: pricing-shape-11-animation 20s linear infinite;
+            }
+        }
+        .shape-7 {
+            position: absolute;
+            left: 25%;
+            bottom: 27%;
+            z-index: -1;
+            img {
+                animation: pricing-shape-7-animation 5s linear infinite;
+                @keyframes pricing-shape-7-animation {
+                    0% {
+                        transform: translateY(0);
+                    }
+                    50% {
+                        transform: translateY(20px);
+                    }
+                    100% {
+                        transform: translateY(0);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #pricing-banner {
+        padding-top: 60px !important;
+        padding-bottom: 50px !important;
+    }
+    .banner-title h2 {
+        font-size: 30px !important;
+    }
+    .banner-title p {
+        margin-top: 10px !important;
+    }
+    .full-practice h2 {
+        font-size: 24px !important;
+        line-height: 1.3 !important;
+    }
+    .full-practice p {
+        margin-top: 10px !important;
+    }
+    .full-practice a {
+        margin-top: 5px !important;
+    }
+    #practice {
+        padding-bottom: 60px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #pricing-banner {
+        padding-top: 80px !important;
+        padding-bottom: 70px !important;
+    }
+    .full-practice h2 {
+        font-size: 30px !important;
+    }
+    #practice {
+        padding-bottom: 80px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .full-practice h2 {
+        font-size: 34px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .shapes {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .pricing-full-nav {
+        padding: 5px 0 !important;
+    }
+}

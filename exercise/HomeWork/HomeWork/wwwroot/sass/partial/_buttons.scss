@@ -1,0 +1,18 @@
+%buttons {
+    display: inline-block;
+    text-decoration: none;
+    padding: 13px 25px 13px 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+%buttons-icon {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}

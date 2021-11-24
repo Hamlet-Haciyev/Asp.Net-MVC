@@ -1,0 +1,75 @@
+main {
+    #service-cards {
+        padding: 100px 0 70px;
+        background-color: #f4f6fc;
+        .service-1-card {
+            transition: all 0.5s ease;
+            margin-bottom: 30px;
+            background: white;
+            padding: 30px 40px;
+            text-align: center;
+            border-radius: 10px;
+            .first-i {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                font-size: 30px;
+                text-align: center;
+                border-radius: 100%;
+                color: white;
+                background-color: #13c4a1;
+                margin-bottom: 25px;
+            }
+            h3 {
+                margin-bottom: 10px;
+                font-size: 22px;
+                font-weight: 500;
+                color: #080a3c;
+            }
+            p {
+                margin: 0;
+                color: #4a6f8a;
+                line-height: 1.8;
+                font-size: 15px;
+            }
+            a {
+                transition: all 0.3s ease;
+                margin-top: 5px;
+                color: #13c4a1;
+                display: inline-block;
+                text-decoration: none;
+                i {
+                    font-weight: 900;
+                    font-size: 13px;
+                    padding-left: 5px;
+                }
+                &:hover {
+                    transform: scale(1.1);
+                    letter-spacing: 2px;
+                }
+            }
+            &:hover {
+                box-shadow: 0 5px 50px rgba(0, 0, 0, 0.08);
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #service-cards {
+        padding: 60px 0 30px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    #service-cards {
+        padding: 80px 0 50px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .service-1-card h3 {
+        font-size: 18px !important;
+    }
+}

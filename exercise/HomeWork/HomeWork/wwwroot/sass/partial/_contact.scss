@@ -1,0 +1,308 @@
+main {
+    #trial {
+        padding: 100px 0;
+        .full-trial {
+            box-shadow: 0 10px 35px 5px rgba(137, 173, 255, 0.15);
+            padding: 50px 30px;
+            background: white;
+            .p7 {
+                padding: 0 7px;
+            }
+            .reasons {
+                padding-right: 15px;
+                border-right: 1px solid #eee;
+                h3 {
+                    margin-bottom: 12px;
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #080a3c;
+                }
+                p {
+                    color: #4a6f8a;
+                    line-height: 1.8;
+                    font-size: 15px;
+                    margin-bottom: 10px;
+                }
+                ul {
+                    padding-left: 0;
+                    list-style-type: none;
+                    margin-top: 25px;
+                    margin-bottom: 0;
+                    li {
+                        color: #4a6f8a;
+                        margin-bottom: 12px;
+                        position: relative;
+                        padding-left: 20px;
+                        i {
+                            color: #13c4a1;
+                            position: absolute;
+                            left: 0;
+                            top: 4px;
+                        }
+                    }
+                }
+            }
+            .trial-form {
+                transition: all 0.5s linear;
+                h3 {
+                    margin-bottom: 25px;
+                    font-size: 32px;
+                    font-weight: 500;
+                    color: #080a3c;
+                }
+                .trialForm {
+                    .form-group {
+                        margin-bottom: 15px;
+                        input {
+                            height: 48px;
+                            padding: 0 15px;
+                            color: #080a3c;
+                            font-size: 14px;
+                            box-shadow: none;
+                            &:focus {
+                                border-color: #13c4a1;
+                            }
+                        }
+                        .trialError {
+                            display: none;
+                            color: red;
+                            font-size: 15px;
+                        }
+                        .trialError2 {
+                            display: none;
+                            color: red;
+                            font-size: 15px;
+                        }
+                        .trialErrorSubmit {
+                            display: none;
+                            color: red;
+                            font-size: 22px;
+                            margin-top: 5px;
+                            font-weight: 500;
+                        }
+                        textarea {
+                            resize: none;
+                            box-shadow: none;
+                            &:focus {
+                                border-color: #13c4a1;
+                            }
+                        }
+                        #trialBtn {
+                            box-shadow: 0 5px 28.5px 1.5px rgba(255, 97, 47, 0.3);
+                            border: none;
+                            color: white;
+                            background-color: #ff612f;
+                            padding: 13px 25px 13px 50px;
+                            @extend %buttons;
+                            i {
+                                color: #080a3c;
+                                font-size: 15px;
+                                font-weight: 900;
+                                right: 73%;
+                                bottom: 10px;
+                                @extend %buttons-icon;
+                            }
+                            &:hover {
+                                background-color: #13c4a1;
+                                box-shadow: 0 5px 28.5px 1.5px rgba(19, 196, 161, 0.3);
+                            }
+                        }
+                        .submitSuccess {
+                            display: none;
+                            color: green;
+                            font-size: 22px;
+                            font-weight: 600;
+                        }
+                        .submitSuccessAnim {
+                            animation: submitSuccessAnimation 0.3s linear 5;
+                            @keyframes submitSuccessAnimation {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+                                25% {
+                                    transform: rotate(5deg);
+                                }
+                                50% {
+                                    transform: rotate(0deg);
+                                }
+                                75% {
+                                    transform: rotate(-5deg);
+                                }
+                                100% {
+                                    transform: rotate(0deg);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .animatedTrial {
+                animation: trialErrorAnimation 0.2s linear 5;
+                @keyframes trialErrorAnimation {
+                    0% {
+                        transform: translateX(0);
+                    }
+                    25% {
+                        transform: translateX(10px);
+                    }
+                    50% {
+                        transform: translateX(0);
+                    }
+                    75% {
+                        transform: translateX(-10px);
+                    }
+                    50% {
+                        transform: translateX(0);
+                    }
+                }
+            }
+            .contact-with-us-full {
+                text-align: center;
+                margin-top: 50px;
+                .contact-with-us {
+                    h3 {
+                        margin-bottom: 15px;
+                        font-size: 22px;
+                        font-weight: 500;
+                        color: #080a3c;
+                    }
+                    .num-mail {
+                        margin-bottom: 0;
+                        font-size: 40px;
+                        font-weight: 500;
+                        display: flex;
+                        flex-direction: column;
+                        .phoneA {
+                            color: #13c4a1;
+                            text-decoration: none;
+                            &:hover {
+                                color: #ff612f;
+                            }
+                        }
+                        span {
+                            color: #4a6f8a;
+                            margin-top: 7px;
+                            font-size: 15px;
+                            font-weight: 500;
+                        }
+                        .mailA {
+                            text-decoration: none;
+                            color: #ff612f;
+                            &:hover {
+                                color: #13c4a1;
+                            }
+                        }
+                    }
+                    .trial-socials {
+                        margin: 25px 0 0 0;
+                        padding: 0;
+                        list-style: none;
+                        display: flex;
+                        justify-content: center;
+                        li {
+                            transition: all 0.5s ease;
+                            font-size: 18px;
+                            border: 1px solid #dadada;
+                            border-radius: 50%;
+                            margin: 0 2px;
+                            width: 40px;
+                            height: 40px;
+                            display: flex;
+                            justify-content: center;
+                            align-content: center;
+                            flex-wrap: wrap;
+                            a {
+                                transition: all 0.5s ease;
+                                color: #aba5a5;
+                                text-decoration: none;
+                            }
+                            &:hover {
+                                background-color: #13c4a1;
+                                border-color: #13c4a1;
+                                a {
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    main #trial {
+        padding: 80px 0 !important;
+    }
+    .reasons h3 {
+        font-size: 20px !important;
+    }
+    .trial-form h3 {
+        font-size: 25px !important;
+        margin-bottom: 20px !important;
+    }
+    .phoneA {
+        font-size: 30px !important;
+    }
+    .mailA {
+        font-size: 30px !important;
+    }
+    .contact-with-us h3 {
+        font-size: 20px!important;
+    }
+    .reasons {
+        margin-bottom: 25px !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    main #trial {
+        padding: 60px 0 !important;
+    }
+    .reasons h3 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+    }
+    .full-trial {
+        padding: 25px 20px !important;
+    }
+    .reasons {
+        border: none !important;
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .reasons ul {
+        display: flex !important;
+        flex-direction: column !important;
+        align-content: flex-start !important;
+        margin-bottom: 25px !important;
+        align-items: flex-start !important;
+    }
+    .trial-form h3 {
+        font-size: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .trial-form {
+        text-align: center !important;
+    }
+    .phoneA {
+        font-size: 24px !important;
+    }
+    .mailA {
+        font-size: 24px !important;
+    }
+    .contact-with-us h3 {
+        font-size: 18px!important;
+        line-height: 1.3 !important;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .phoneA {
+        font-size: 34px !important;
+    }
+    .mailA {
+        font-size: 34px !important;
+    }
+}
